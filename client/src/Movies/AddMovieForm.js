@@ -26,7 +26,6 @@ const AddMovieForm = () => {
             ...addedMovie,
             [e.target.name]: value,
         })
-
     }
 
     const handleSubmit = e => {
