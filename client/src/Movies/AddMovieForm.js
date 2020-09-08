@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useHistory, useParams } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import Axios from 'axios';
 
 const AddMovieForm = () => {
@@ -13,7 +13,7 @@ const AddMovieForm = () => {
 
     const {push} = useHistory();
     const [addedMovie, setAddedMovie] = useState(initialState);
-
+    
     const handleChange = e => {
         let value = '';
         if(e.target.name === 'stars') {
