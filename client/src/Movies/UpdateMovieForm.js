@@ -35,7 +35,7 @@ const UpdateMovieForm = props => {
             .put(`http://localhost:5000/api/movies/${id}`, updatedMovie)
             .then(res => {
                 setUpdatedMovie(res.data);
-                push(`/movies/${id}`);
+                push(`/`);
             })
             .catch(err => console.log(err));
     }
